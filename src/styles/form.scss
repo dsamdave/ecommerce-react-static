@@ -1,0 +1,94 @@
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    // margin: 10px;
+   
+    
+  }
+  
+  .bttn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #40BFFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .bttn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+  }
+  
+  .bttn:hover {
+    transform: scale(0.98);
+  }
+  
+  /* Backgrounds & colored buttons */
+  .bg-primary,
+  .bttn-primary {
+    background-color: #40BFFF;
+    color: #fff;
+  }
+
+
+
+
+  .upload-form {
+    position: relative;
+    top: 5px;
+    // height: 350px;
+    height: 400px;
+    // width: 400px;
+    width: 40rem;
+    padding: 10px 40px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromTop 1s ease-in;
+    margin: auto;
+  }
+
+  .form-body{
+      margin: 5px 40px;
+  }
+  
+  .upload-form .form-control {
+    margin: 30px 0;
+  }
+  
+  .upload-form input[type='text'],
+  .upload-form input[type='email'],
+  .upload-form input[type='password'],
+  .upload-form input[type='number'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+  }
+  
+  .upload-form input:focus {
+    outline: none;
+  }
+
+  .profile-form{
+      @extend .upload-form;
+      height: 450px;
+  }
+
+
+  
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }

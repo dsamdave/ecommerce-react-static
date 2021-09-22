@@ -1,0 +1,217 @@
+@media (max-width: 35em){
+    body{
+        max-width: 1400px;
+        
+      overflow-x: hidden;
+    }
+
+
+    .Header{
+        font-size: 10px;
+        // width: 20em;
+        padding: 5px 30px;
+        // margin-left: -10rem;
+      }
+
+
+.Navbar li {
+  font-size: 8px;
+  padding: 0 .6rem;
+}
+.Navbar {
+  margin: 0;
+  padding: 0 1rem;
+  width: 20em;
+  margin-top: .5rem;
+}
+.e-comm{
+  font-size: 9px;
+  margin-left: .2rem;
+  padding: 0;
+  background-color: #03A9F4;
+  margin: 0;
+}
+.logo{
+  width: 1rem;
+  margin-left: 2rem;
+  display: none;
+}
+
+.login{
+  margin-right: 0;
+  padding: 0;
+}
+.en{
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.image{
+  top: 90px; 
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+  .headtext{
+    font-size: 20px;
+    top: 9rem;
+    line-height: 30px;
+    left: 2%;
+  }
+
+  .Topthree{
+    top: 17em;
+  }
+  .pictureOne{
+    left: 11%;
+  }
+  .pictureTwo{
+    left: 35%;
+  }
+  .pictureThree{
+    left: 60%;
+  }
+  .imgone{
+    width: 11rem;
+  }
+  .one {
+    font-size: 9px;
+  }
+  .two {
+    font-size: 7px;
+  }
+  .three {
+    font-size: 10px;
+  }
+  .four{
+    font-size: 7px;
+  }
+  .five{
+    font-size: 10px;
+  }
+  .six {
+    font-size: 7px;
+    margin-top: 1rem;
+  }
+  .Bigtext{
+    font-size: 20px;
+    margin-left: 2.5rem;
+  }
+
+  .collection{
+    font-size: 14px;
+    margin-left: 3rem;
+  }
+  .img{
+    width: 50%;
+    margin-left: 0;
+  }
+  .overlay{
+    left: -20%;
+  }
+  .Productname{
+    font-size: 12px;
+  }
+  .stars{
+    width: 20rem;
+  }
+
+  .numberOne{
+    padding-left: 0;
+  }
+
+  .price{
+    font-size: 12px;
+  }
+
+  .off{
+    font-size: 10px;
+  }
+  .former{
+    font-size: 10px;
+  }
+
+    .productcollection{
+      grid-template-columns: 20rem 20rem;
+    }
+    .somestuff {
+      grid-template-columns: 20rem;
+    }
+    .whyus{
+      grid-template-columns: 20rem;
+    }
+    .Collection {
+      top: 25rem;
+    }
+
+    .bluebg {
+      height: 150px;
+      width: 90%;
+      margin-top: 5rem;
+      padding: 3rem;
+      padding-left: 0;
+    }
+
+    .giantshoe {
+      width: 12rem;
+      height: 10rem;
+      position: relative;
+      top: -14rem;
+      left: 25rem;
+    }
+    
+    .bluebg h3 {
+      font-size: 25px;
+    }
+    
+    .bluebg p {
+      font-size: 15px;
+    }
+    
+    .bluebg a {
+      font-size: 10px;
+      line-height: 50px;
+    }
+
+    .writeups{
+      margin-left: 2rem;
+    }
+    .latestnews h1 {
+      font-size: 34px;
+      margin-bottom: 4rem;
+    }
+
+    .search{
+      margin-top: 25rem;
+    }
+
+    .search input {
+      width: 254px;
+      height: 63px;
+    }
+.footer{
+  padding-left: 2em;
+}
+
+    .firstsection{
+      grid-template-columns: 15em 15em;
+      gap: 1em;
+      margin-top: 2rem;
+    }
+    .secondsection{
+      grid-template-columns: 15em 15em;
+      gap: 0;
+      padding-top: 0;
+    }
+    .contus{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 150%;
+    }
+    .contus{
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
