@@ -5,43 +5,43 @@ import Headimage from "./Headimage";
 
 const Upload = () => {
 
-    const [formValue, setFormValue] = useState({
-        name: '',
-        description: '',
-        price: '',
-        file: '',
+    // const [formValue, setFormValue] = useState({
+    //     name: '',
+    //     description: '',
+    //     price: '',
+    //     file: '',
 
-    });
+    // });
 
 
-    const handleSubmit = async () => {
-        const uploadFormData = new FormData();
-        uploadFormData.append("name", formValue.name)
-        uploadFormData.append("description", formValue.description)
-        uploadFormData.append("price", formValue.price)
-        uploadFormData.append("image", formValue.image)
+    // const handleSubmit = async () => {
+    //     const uploadFormData = new FormData();
+    //     uploadFormData.append("name", formValue.name)
+    //     uploadFormData.append("description", formValue.description)
+    //     uploadFormData.append("price", formValue.price)
+    //     uploadFormData.append("image", formValue.image)
 
-        try {
-            const productDetails = await axios ({
-                method: "post",
-                url: " ",
-                data: uploadFormData,
-                headers: {"Content-Type": "multipart/form-data"}
-            });
+    //     try {
+    //         const productDetails = await axios ({
+    //             method: "post",
+    //             url: " ",
+    //             data: uploadFormData,
+    //             headers: {"Content-Type": "multipart/form-data"}
+    //         });
             
-        } catch (error) {
-            console.log(error)
-        }
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
 
-    }
+    // }
 
 
-    const handleChange = (e) =>{
-        setFormValue({
-            ...formValue,
-            [e.target.name]: e.target.value
-        });
-    }
+    // const handleChange = (e) =>{
+    //     setFormValue({
+    //         ...formValue,
+    //         [e.target.name]: e.target.value
+    //     });
+    // }
 
 
 
@@ -49,7 +49,7 @@ const Upload = () => {
     return ( 
         <section>
             <div className="upload-form card">
-                <form className="form-body" onSubmit={handleSubmit}>
+                <form className="form-body" >
                     <h2>Upload A Product</h2>
                     <div className="form-control">
                         <input 
@@ -57,8 +57,8 @@ const Upload = () => {
                         name="name" 
                         placeholder="Product Name" 
                         required 
-                        value={formValue.name}
-                        onChange={handleChange}
+                        
+                        
                         />
                     </div>
                     <div className="form-control">
@@ -67,8 +67,8 @@ const Upload = () => {
                         name="description" 
                         placeholder="Product Description" 
                         required 
-                        value={formValue.description}
-                        onChange={handleChange}
+                        
+                       
                         />
                     </div>
                     <div className="form-control">
@@ -77,8 +77,8 @@ const Upload = () => {
                         name="price" 
                         placeholder="Product Price" 
                         required 
-                        value={formValue.price}
-                        onChange={handleChange}
+                        
+                        
                         />
                     </div>
                     <div className="form-control">
@@ -86,8 +86,8 @@ const Upload = () => {
                         type="file" 
                         name="image"
                         required 
-                        value={formValue.image}
-                        onChange={handleChange}
+                        
+                       
                         />
                     </div>
                     <input type="submit" value="Post Product" className="bttn bttn-primary" />

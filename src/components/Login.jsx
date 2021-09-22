@@ -6,39 +6,39 @@ import { Link } from 'react-router-dom';
 
 const Profile = () => {
 
-    const [formValue, setFormValue] = useState({
-        email: '',
-        password: '',
+    // const [formValue, setFormValue] = useState({
+    //     email: '',
+    //     password: '',
 
-    });
+    // });
 
 
-    const handleSubmit = async () => {
-        const uploadFormData = new FormData();
-        uploadFormData.append("email", formValue.email)
-        uploadFormData.append("password", formValue.password)
+    // const handleSubmit = async () => {
+    //     const uploadFormData = new FormData();
+    //     uploadFormData.append("email", formValue.email)
+    //     uploadFormData.append("password", formValue.password)
 
-        try {
-            const productDetails = await axios ({
-                method: "post",
-                url: " ",
-                data: uploadFormData,
-                headers: {"Content-Type": "multipart/form-data"}
-            });
+    //     try {
+    //         const productDetails = await axios ({
+    //             method: "post",
+    //             url: " ",
+    //             data: uploadFormData,
+    //             headers: {"Content-Type": "multipart/form-data"}
+    //         });
             
-        } catch (error) {
-            console.log(error)
-        }
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
 
-    }
+    // }
 
 
-    const handleChange = (e) =>{
-        setFormValue({
-            ...formValue,
-            [e.target.name]: e.target.value
-        });
-    }
+    // const handleChange = (e) =>{
+    //     setFormValue({
+    //         ...formValue,
+    //         [e.target.name]: e.target.value
+    //     });
+    // }
 
 
 
@@ -46,7 +46,7 @@ const Profile = () => {
     return ( 
         <section>
             <div className=" upload-form profile-form card">
-                <form className="form-body" onSubmit={handleSubmit}>
+                <form className="form-body" >
                     <h2>Login</h2>
                     <div className="form-control">
                         <input 
@@ -54,8 +54,8 @@ const Profile = () => {
                         name="email" 
                         placeholder="enter email" 
                         required 
-                        value={formValue.email}
-                        onChange={handleChange}
+                        
+                        
                         />
                     </div>
                     
@@ -65,12 +65,12 @@ const Profile = () => {
                         name="password" 
                         placeholder="Password" 
                         required 
-                        value={formValue.password}
-                        onChange={handleChange}
+                        
+                        
                         />
                     </div>
                     
-                    <input type="submit" value="register" className="bttn bttn-primary" />
+                    <input type="submit" value="Login" className="bttn bttn-primary" />
                 </form>
             </div>
                 <Headimage />
